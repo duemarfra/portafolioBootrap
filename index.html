@@ -8,7 +8,7 @@
     <link rel="icon" href="assets/img/logoIncompleto.png" type="image/png" />
 
     <!--Internal link css-->
-    <link rel="stylesheet" href="utils/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="utils/css/styles.css" />
 
     <!--External link css of BOOTSTRAP-->
 
@@ -37,53 +37,56 @@
     <title>Marcelo Dueñas - Desarollador Web</title>
   </head>
   <!--==========BODY==========-->
-  <body class="bg-light">
+  <body class="bg-secondary text-light">
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-secondary sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="assets/img/logoCompleto.png"
+            alt="Marcelo Dueñas diseñador web" id="imagenLogo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav pb-1 ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#acerca">Acerca</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#servicios">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portafolio">Portafolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
     <!--!inicio-->
     <section id="inicio">
-      <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img
-              src="assets/img/logoCompleto.png"
-              alt="Marcelo Dueñas diseñador web" id="imagenLogo"
-            />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarSupportedContent"
-          >
-            <ul class="navbar-nav pb-1 ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#inicio">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#acerca">Acerca</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#servicios">Servicios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#portafolio">Portafolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contacto">Contacto</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      
 
       <div class="container-fluid" id="cuerpoInicio">
         <div
@@ -99,7 +102,7 @@
             <h1 class="text-uppercase">desarollador web</h1>
           </div>
 
-          <div class="redesSociales">
+          <nav class="redesSociales">
             <ul>
               <li>
                 <a href="https://www.facebook.com/duemarfra/" target="new" class="facebook"
@@ -129,13 +132,8 @@
                 ></a>
               </li>
             </ul>
-          </div>
+          </nav>
 
-          <div class="col-12 buttonDown" id="downInicio">
-            <a href="#acerca">
-              <i class="bi bi-chevron-compact-down"></i>
-            </a>
-          </div>
         </div>
       </div>
     </section>
@@ -169,9 +167,9 @@
     ===END HEADER===-->
 
     <!--======SECTION ABOUT======-->
-    <section id="about me" class="seccion">
+    <section id="acerca">
       <div class="titleSeccion">
-        <h2>about me</h2>
+        <h2>Acerca de mi</h2>
       </div>
 
       <div>
@@ -179,64 +177,78 @@
 
         <div>
           <div class="mainParagraph">
-            <h3>Web Developer</h3>
+            <h3>¡Hola!</h3>
             <p>
-              I was born in Ibarra, a beautiful city in Ecuador, I moved to
-              Argentina in 2018 and now I live in another beautiful city called
-              Puerto Madryn in the province of Chubut.
+              Me llamo Marcelo Dueñas y soy desarrollador web. Nací en Ibarra, una hermosa ciudad de Ecuador, me mudé a Argentina en 2019 y ahora vivo en otra hermosa ciudad llamada Puerto Madryn en la provincia de Chubut.
             </p>
-          </div>
-
-          <div class="personalData">
-            <ul>
-              <li><i></i><strong>Birthday:</strong><span>30 Jan 1996</span></li>
-              <li><i></i><strong>Age:</strong><span>25</span></li>
-              <li>
-                <i></i><strong>City:</strong
-                ><span>Puerto Madryn, Argentina</span>
-              </li>
-              <li><i></i><strong>Website:</strong><span>example.com</span></li>
-            </ul>
           </div>
 
           <div id="othersParagraphs">
-            <nav><a href="othersParagraphs">read more about me</a></nav>
+
+
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item text-dark">
+                <p class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    hola homa
+                  </button>
+                </p>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body text-dark">
+                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <nav><a href="othersParagraphs">lee mas sobre mi</a></nav>
 
             <p>
-              I studied the first 2 years of engineering in software design in
-              my hometown, after moving I enrolled in a career as similar as
-              possible to the one I was studying before.
+              Estudié los primeros 2 años de ingeniería en diseño de software en mi ciudad natal, después de mudarme me inscribí en una carrera lo más similar posible a la que estaba estudiando antes.
             </p>
 
             <p>
-              When I was about to start my first year of university in the new
-              city of Puerto Madryn, the coronavirus shook the world and plunged
-              us into strict isolation in our homes. But the world cannot stop,
-              so universities, jobs and hobbies are now carried out on the
-              internet through devices such as smart phones or computers.
+              Cuando estaba a punto de comenzar mi primer año de universidad en la nueva ciudad de Puerto Madryn, el coronavirus sacudió al mundo y nos sumió en un estricto aislamiento en nuestros hogares. Pero el mundo no puede parar, por eso las universidades, los trabajos y los pasatiempos ahora se llevan a cabo en Internet a través de dispositivos como teléfonos inteligentes o computadoras.
             </p>
 
             <p>
-              At this point in my life is where I fell in love with the web
-              since it is the perfect medium by which I can develop code for
-              different devices, without having to worry about their hardware or
-              operating system differences. So I got down to work and started a
-              series of virtual courses certified by the National Technological
-              University in Argentina.
+              En este punto de mi vida es donde me enamoré de la web ya que es el medio perfecto por el cual puedo desarrollar código para diferentes dispositivos, sin tener que preocuparme por sus diferencias de hardware o sistema operativo. Así que me puse manos a la obra e inicié una serie de cursos virtuales certificados por la Universidad Tecnológica Nacional de Argentina.
             </p>
 
             <p>
-              Everything you can see on this website is thanks to my knowledge
-              acquired throughout my life in a self-taught way and largely from
-              the universities where I studied different technologies until I
-              found what I like, which is web development.
+              Todo lo que puedes ver en esta web es gracias a mis conocimientos adquiridos a lo largo de mi vida de forma autodidacta y en gran parte de las universidades donde estudié diferentes tecnologías hasta que encontré lo que me gusta, que es el desarrollo web.
             </p>
+
           </div>
 
           <div>
-            <div><h2>skills</h2></div>
+            <h3>Habilidades</h3>
 
-            <div>
+            <!--! botonera skills-->
+            
+            <nav class="tecnologias">
+              <ul>
+                <li><a target="new" href="https://es.wikipedia.org/wiki/HTML5"><img src="assets/img/technologies/htmlLogo.png" alt="html5"><br>HTML5</a></li>
+                <li><a target="new" href="https://en.wikipedia.org/wiki/CSS"><img src="assets/img/technologies/cssLogo.png" alt="css"><br>CSS3</a></li>
+                <li><a target="new" href="https://es.wikipedia.org/wiki/JavaScript"><img src="assets/img/technologies/javascriptLogo.png" alt="javascript"><br>JAVASCRIPT</a></li>
+                <li><a target="new" href="https://es.wikipedia.org/wiki/Bootstrap_(framework)"><img src="assets/img/technologies/bootstrapLogo.png" alt="bootstrap"><br>BOOTSTRAP</a></li>
+              </ul>
+            </nav>
+
+            <h3>Estoy aprendiendo</h3>
+            <nav class="tecnologias">
+              <ul>
+                <li><a target="new" href="https://es.wikipedia.org/wiki/Sass"><img src="assets/img/technologies/sassLogo.png" alt="sass"><br>SASS</a></li>
+                <li><a target="new" href="https://es.wikipedia.org/wiki/MySQL"><img src="assets/img/technologies/mysqlLogo.png" alt="mysql"><br>MYSQL</a></li>
+                <li><a target="new" href="https://es.wikipedia.org/wiki/PHP"><img src="assets/img/technologies/phpLogo.png" alt="php"><br>PHP</a></li>
+                <li><a target="new" href="https://es.wikipedia.org/wiki/Debian_GNU/Linux"><img src="assets/img/technologies/debianLogo.png" alt="debian"><br>DEBIAN</a></li>
+              </ul>
+            </nav>
+            <!--! End botonera skills-->
+
+            <!-- <div>
               <p>html</p>
               <img src="assets/img/technologies/htmlLogo.png" alt="html5" />
             </div>
@@ -261,7 +273,7 @@
           </div>
 
           <div>
-            <h2>I'm learning</h2>
+            <h3>I'm learning</h3>
 
             <div>
               <p>sass</p>
@@ -282,18 +294,18 @@
               <p>Debian</p>
               <img src="assets/img/technologies/debianLogo.png" alt="Debian" />
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
     <!--===END ABOUT===-->
 
     <!--======SERVICES======-->
-    <section id="services" class="seccion">
+    <section id="servicios">
       <div>
         <div>
           <a href=""></a>
-          <p class="whiteHighlight">Fully Responsive</p>
+          <p>Fully Responsive</p>
           <p>
             Your site will display properly on any device, including desktop
             computers, tablets and mobile phones.
@@ -301,7 +313,7 @@
         </div>
         <div>
           <a href=""></a>
-          <p class="whiteHighlight">Creativity Design</p>
+          <p>Creativity Design</p>
           <p>
             A good and attractive web design helps you keep your leads on your
             site, which is the digital face of your business.
@@ -309,7 +321,7 @@
         </div>
         <div>
           <a href=""></a>
-          <p class="whiteHighlight">Development</p>
+          <p>Development</p>
           <p>
             I know the importance of web design and can help you create a
             website you'll love.
@@ -320,7 +332,7 @@
       <div>
         <div>
           <a href=""></a>
-          <p class="whiteHighlight">Social Media Integration</p>
+          <p>Social Media Integration</p>
           <p>
             There are a lot of social platforms out there, and you should
             promote your presence on them on your website.
@@ -328,7 +340,7 @@
         </div>
         <div>
           <a href=""></a>
-          <p class="whiteHighlight">Performance</p>
+          <p>Performance</p>
           <p>
             Retaining users is crucial to improving conversions. High-performing
             sites engage and retain users.
@@ -336,7 +348,7 @@
         </div>
         <div>
           <a href=""></a>
-          <p class="whiteHighlight">SEO</p>
+          <p">SEO</p>
           <p>
             I will optimize your site with intelligent Search Engine
             Optimization strategy to generate leads.
@@ -347,7 +359,7 @@
     <!--===END SERVICES===-->
 
     <!--======PORTFOLIO======-->
-    <section id="portfolio" class="seccion">
+    <section id="portafolio">
       <div>
         <div><img src="" alt="" /></div>
         <div>
@@ -374,8 +386,7 @@
     <!--===END PORTFOLIO===-->
 
     <!--======FOOTER======-->
-    <footer id="contact" class="section">
-      <div></div>
+    <footer id="contacto">
       <div id="copyright">
         Developed and designed by Tu Marcelo Dueñas. ©2021. All rights reserved.
       </div>
