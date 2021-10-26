@@ -47,6 +47,10 @@ section, footer {
     height: auto !important;
 }
 
+.colorBotoneraPrincipal {
+    background: rgb(84, 84, 84);
+}
+
 #inicio {
     height: 93vh !important;
     background: linear-gradient(-45deg, rgba(5,7,12,0.75), rgba(5,7,12,0.75)), url(../../assets/img/fondo.jpg) !important;
@@ -153,6 +157,7 @@ h2 {
     background-clip: text;
     text-align: center;
     font-size: 60px !important;
+    text-transform: uppercase;
 }
 
 .tecnologias ul li {
@@ -187,7 +192,11 @@ h2 {
 }
 
 .tituloDeSeccion {
-    background: linear-gradient( 45deg, rgb(56, 138, 209) 50%, rgb(108, 117, 125) 50%);
+    background: linear-gradient( 45deg, rgb(56, 138, 209) 50%, rgb(108, 117, 125) 50%) ;
+}
+
+.separadorDeSeccion {
+    background: linear-gradient( 45deg, rgb(108, 117, 125) 50%, rgb(84, 84, 84) 50%);
 }
 
 @media all and (max-width: 749px){
@@ -201,6 +210,16 @@ h2 {
 
     .tecnologias ul li {
         height: 160px;
+    }
+    .tecnologias ul {
+        margin-left: -2rem;
+    }
+    .tecnologias ul:hover a{
+        filter: none;
+        -webkit-filter: none;
+    }
+    h2 {
+        font-size: 30px !important;
     }
 }
 
