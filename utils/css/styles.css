@@ -160,6 +160,10 @@ h2 {
     text-transform: uppercase;
 }
 
+h3 {
+    color: #0dcaf0;
+}
+
 .tecnologias ul li {
     display: inline-block;
     margin: 0 5px;
