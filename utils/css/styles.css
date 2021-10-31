@@ -4,43 +4,25 @@
     --telegram: #60b0f4;
     --email: #ffd900;
     --linkedin: #0077b5;
-    --celeste: #60b0f4;
+
+    --Cyan: #0dcaf0;
+    --azulPrimary: #0d6efd;
+    --grisSecondary: #6c757d;
+    
+    --verdefluorecente : #00ffa6;
+    --grisBotonera: #646464;
+    --grisClaro: #848484;
+    --gris: #545454;
     --azul: #388ad1;
-    --grisClaro: #b4b4b4;
-    --grisObscuro: #545454;
-    --degradadoObscuro: rgba(5,7,12,0.75);
-}
-/*
-celeste: #60b0f4 , rgb(96, 176, 244);
-azul: #388ad1, rgb(56, 138, 209);
-grisClaro: #b4b4b4, rgb(180, 180, 180);
-grisObscuro: #545454, rgb(84, 84, 84);
-box-shadow: 0px 0px 30px #660033;
-*/
-
-.colorines{
-    background: rgba(96, 176, 244, 0.3) !important;
-}
-.colorines2{
-    background: rgba(56, 138, 209,0.5) !important;
-}
-.colorines3{
-    background: rgba(180, 180, 180,0.5) !important;
-}
-.colorines4{
-    background: rgba(84, 84, 84,0.5) !important;
+    --negro: #05070c; /*! rgb(5,7,12) */
 }
 
-.colorines5{
-    background: rgba(5,7,12,0.75) !important;
+p {
+    text-align: justify;
 }
 
 .textoJustificado {
     text-align: justify;
-}
-
-.bordeAzul {
-    border: 3px solid #0d6efd;
 }
 
 section, footer {
@@ -48,7 +30,7 @@ section, footer {
 }
 
 .colorBotoneraPrincipal {
-    background: rgb(84, 84, 84);
+    background: var(--grisBotonera);
 }
 
 #inicio {
@@ -64,11 +46,11 @@ section, footer {
 }
 
 h1{
-    background: linear-gradient(rgb(96, 176, 244), rgba(5,7,12,0.75));
+    background: linear-gradient(var(--telegram), rgba(5,7,12,0.75));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-stroke: 1px rgb(108, 117, 125);
+    -webkit-text-stroke: 1px var(--grisSecondary);
 }
 ul{
     text-align: center;
@@ -151,7 +133,7 @@ ul{
 }
 
 h2 {
-    background: linear-gradient(45deg, rgb(108, 117, 125) 50%, rgb(56, 138, 209) 50%);
+    background: linear-gradient(45deg, var(--grisSecondary) 50%, var(--azul) 50%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
@@ -161,14 +143,18 @@ h2 {
 }
 
 h3 {
-    color: #0dcaf0;
+    color: var(--Cyan);
+}
+
+.rellenoCaja {
+    background: var(--grisBotonera) !important;
 }
 
 .tecnologias ul li {
     display: inline-block;
     margin: 0 5px;
     width: 150px;
-    height: 50px;
+    height: auto;
     text-align: center;
     position: sticky;
 }
@@ -177,12 +163,13 @@ h3 {
 .tecnologias ul li a {
     display: block;
     padding: 0 10px;
-    color: #ffffff;
+    color: white;
     line-height: 50px;
     font-size: 18px;
     box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     text-decoration: none;
+    background: linear-gradient(var(--grisSecondary), var(--grisBotonera));
 }
 
 .tecnologias ul:hover a{
@@ -195,12 +182,57 @@ h3 {
     filter: none;
 }
 
-.tituloDeSeccion {
-    background: linear-gradient( 45deg, rgb(56, 138, 209) 50%, rgb(108, 117, 125) 50%) ;
+.separadorDeSeccion {
+    background: linear-gradient( 45deg, var(--grisSecondary) 50%, var(--gris) 50%);
 }
 
-.separadorDeSeccion {
-    background: linear-gradient( 45deg, rgb(108, 117, 125) 50%, rgb(84, 84, 84) 50%);
+.tituloDeSeccion {
+    background: linear-gradient( 45deg, var(--azul) 50%, var(--grisSecondary) 50%) ;
+}
+
+.tarjetaEstilo {
+    overflow: hidden;
+    transition: all ease-out 0.2s;
+    background: linear-gradient(var(--grisSecondary), var(--grisBotonera));
+    border: 3px solid var(--Cyan);
+    box-shadow: 2px 1px 5px 1px var(--Cyan);
+    position: sticky;
+    border-radius: 1%;
+    -webkit-border-radius: 1%;
+    -moz-border-radius: 1%;
+    -ms-border-radius: 1%;
+    -o-border-radius: 1%;
+}
+
+.tarjetaEstilo h5 {
+    color: var(--Cyan);
+}
+
+.tarjetaEstilo p {
+    border-bottom: 5px solid var(--Cyan);
+    border-radius: 2%;
+    -webkit-border-radius: 2%;
+    -moz-border-radius: 2%;
+    -ms-border-radius: 2%;
+    -o-border-radius: 2%;
+}
+
+.tarjetaEstilo:hover {
+    transform: scale(1.10);
+    -webkit-transform: scale(1.10);
+    -moz-transform: scale(1.10);
+    -ms-transform: scale(1.10);
+    -o-transform: scale(1.10);
+    box-shadow: 2px 1px 5px 1px var(--verdefluorecente);
+}
+
+.tarjetaEstilo:hover h4 {
+    color: var(--verdefluorecente);
+}
+
+.tarjetaEstilo:hover p {
+    border-bottom: 5px solid var(--verdefluorecente);
+    overflow: hidden;
 }
 
 @media all and (max-width: 749px){
