@@ -9,12 +9,20 @@
     --azulPrimary: #0d6efd;
     --grisSecondary: #6c757d;
     
-    --verdefluorecente : #00ffa6;
+    --verdefluorecente : #00ffaa;
     --grisBotonera: #646464;
     --grisClaro: #848484;
     --gris: #545454;
     --azul: #388ad1;
     --negro: #05070c; /*! rgb(5,7,12) */
+}
+
+a {
+    color: var(--Cyan) !important;
+}
+
+a:hover {
+    color: var(--verdefluorecente) !important;
 }
 
 p {
@@ -72,7 +80,7 @@ ul{
 .redesSociales ul li a {
     display: block;
     padding: 0 10px;
-    color: #ffffff;
+    color: #ffffff !important;
     line-height: 50px;
     font-size: 18px;
     box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
@@ -88,6 +96,7 @@ ul{
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
     filter: none;
+    color: #ffffff !important;
 }
 
 .redesSociales ul li .facebook{
@@ -149,6 +158,16 @@ h3 {
 .rellenoCaja {
     background: var(--grisBotonera) !important;
 }
+#btnDescarga {
+    background: var(--azul);
+}
+#btnDescarga:hover {
+    background-color: var(--verdefluorecente) !important;
+}
+
+#btnLee:hover {
+    background: var(--verdefluorecente) !important;
+}
 
 .tecnologias ul li {
     display: inline-block;
@@ -162,8 +181,9 @@ h3 {
 
 .tecnologias ul li a {
     display: block;
+    margin: 10px 0px;
     padding: 0 10px;
-    color: white;
+    color: #ffffff !important;
     line-height: 50px;
     font-size: 18px;
     box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
@@ -177,6 +197,7 @@ h3 {
 }
 
 .tecnologias ul li a:hover{
+    color: var(--verdefluorecente) !important;
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
     filter: none;
@@ -233,6 +254,24 @@ h3 {
 .tarjetaEstilo:hover p {
     border-bottom: 5px solid var(--verdefluorecente);
     overflow: hidden;
+}
+
+/*! open*/
+
+#botoneraFooter ul li {
+    width: 150px;
+    height: 150px;
+}
+
+#botoneraFooter ul li a {
+    line-height: 150px;
+    font-size: 50px;
+}
+
+/*! end*/
+
+#copyright {
+    background-color: var(--gris);
 }
 
 @media all and (max-width: 749px){

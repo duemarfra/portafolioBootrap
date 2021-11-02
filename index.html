@@ -65,8 +65,6 @@
   </nav>
 
   <section id="inicio">
-
-
     <div class="container-fluid" id="cuerpoInicio">
       <div class="
             row
@@ -109,18 +107,19 @@
       <p class="d-none">Next Section</p>
     </div>
   </div>
+
   <div class="container-fluid tituloDeSeccion  pt-3 pb-3">
     <h2>acerca de mi</h2>
   </div>
-
+  <!--!ACERCA-->
   <section class="container-lg">
 
-    <div class="row mt-5 mb-3">
-      <div class="col-10 offset-1 col-sm-4 text-center mb-3 mb-sm-0"><img src="assets/img/yo.jpg"
-          class="img-fluid rounded" alt="Marcelo Dueñas desarrollador web">
+    <div class="row mt-5 mb-3 text-center">
+      <div class="col-10 offset-1 col-md-3 mb-3 mb-md-0 p-0"><img src="assets/img/yo.jpg" class="img-fluid rounded"
+          alt="Marcelo Dueñas desarrollador web">
       </div>
 
-      <div class="col-10 offset-1 offset-sm-0 col-sm-6 border rounded p-3 textoJustificado border-info rellenoCaja">
+      <div class="col-10 offset-1 offset-md-0 col-md-7 border rounded p-3 textoJustificado border-info rellenoCaja">
         <h3>¡Hola!</h3>
         <p>
           Me llamo Marcelo Dueñas y soy desarrollador web. Nací en Ibarra, una hermosa ciudad de Ecuador, me
@@ -129,10 +128,10 @@
         </p>
         <div class="text-center">
           <a target="new" href="https://www.google.com.ar/">
-            <button type="button" class="btn btn-primary mt-1"><i class="bi bi-cloud-arrow-down"></i> Descarga mi
+            <button id="btnDescarga" type="button" class="btn text-white mt-1"><i class="bi bi-cloud-arrow-down"></i> Descarga mi
               CV</button>
           </a>
-          <button class="btn btn-info mt-1" type="button" data-bs-toggle="collapse"
+          <button id="btnLee" class="btn btn-info mt-1 text-white" type="button" data-bs-toggle="collapse"
             data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
             <i class="bi bi-box-arrow-down"></i> Lee más sobre mi
           </button>
@@ -141,39 +140,39 @@
     </div>
 
     <div class="row text-center">
-        <div class="collapse collapse-horizontal" id="collapseWidthExample">
-          <div class="card card-body card border-info textoJustificado rellenoCaja">
-            <p>
-              Estudié los primeros 2 años de ingeniería en diseño de software en mi ciudad natal, después de mudarme me
-              inscribí en una carrera lo más similar posible a la que estaba estudiando antes.
-            </p>
+      <div class="mb-3 collapse collapse-horizontal" id="collapseWidthExample">
+        <div class="card card-body card border-info textoJustificado rellenoCaja col-12 offset-0 col-lg-10 offset-lg-1">
+          <p>
+            Estudié los primeros 2 años de ingeniería en diseño de software en mi ciudad natal, después de mudarme me
+            inscribí en una carrera lo más similar posible a la que estaba estudiando antes.
+          </p>
 
-            <p>
-              Cuando estaba a punto de comenzar mi primer año de universidad en la nueva ciudad de Puerto Madryn, el
-              coronavirus sacudió al mundo y nos sumió en un estricto aislamiento en nuestros hogares. Pero el mundo no
-              puede parar, por eso las universidades, los trabajos y los pasatiempos ahora se llevan a cabo en Internet
-              a
-              través de dispositivos como teléfonos inteligentes o computadoras.
-            </p>
+          <p>
+            Cuando estaba a punto de comenzar mi primer año de universidad en la nueva ciudad de Puerto Madryn, el
+            coronavirus sacudió al mundo y nos sumió en un estricto aislamiento en nuestros hogares. Pero el mundo no
+            puede parar, por eso las universidades, los trabajos y los pasatiempos ahora se llevan a cabo en Internet
+            a
+            través de dispositivos como teléfonos inteligentes o computadoras.
+          </p>
 
-            <p>
-              En este punto de mi vida es donde me enamoré de la web ya que es el medio perfecto por el cual puedo
-              desarrollar código para diferentes dispositivos, sin tener que preocuparme por sus diferencias de hardware
-              o
-              sistema operativo. Así que me puse manos a la obra e inicié una serie de cursos virtuales certificados por
-              la
-              Universidad Tecnológica Nacional de Argentina.
-            </p>
+          <p>
+            En este punto de mi vida es donde me enamoré de la web ya que es el medio perfecto por el cual puedo
+            desarrollar código para diferentes dispositivos, sin tener que preocuparme por sus diferencias de hardware
+            o
+            sistema operativo. Así que me puse manos a la obra e inicié una serie de cursos virtuales certificados por
+            la
+            Universidad Tecnológica Nacional de Argentina.
+          </p>
 
-            <p>
-              Todo lo que puedes ver en esta web es gracias a mis conocimientos adquiridos a lo largo de mi vida de
-              forma
-              autodidacta y en gran parte de las universidades donde estudié diferentes tecnologías hasta que encontré
-              lo
-              que me gusta, que es el desarrollo web.
-            </p>
-          </div>
+          <p>
+            Todo lo que puedes ver en esta web es gracias a mis conocimientos adquiridos a lo largo de mi vida de
+            forma
+            autodidacta y en gran parte de las universidades donde estudié diferentes tecnologías hasta que encontré
+            lo
+            que me gusta, que es el desarrollo web.
+          </p>
         </div>
+      </div>
     </div>
 
     <div class="text-center mt-3 mb-3">
@@ -191,15 +190,6 @@
               src="assets/img/technologies/javascriptLogo.png" alt="javascript"><br>JAVASCRIPT</a></li>
         <li><a target="new" href="https://es.wikipedia.org/wiki/Bootstrap_(framework)"><img
               src="assets/img/technologies/bootstrapLogo.png" alt="bootstrap"><br>BOOTSTRAP</a></li>
-      </ul>
-    </nav>
-
-    <div class="text-center mt-3 mb-3 pt-3">
-      <h3 class="text-uppercase">Estoy aprendiendo</h3>
-    </div>
-
-    <nav class="tecnologias">
-      <ul>
         <li><a target="new" href="https://es.wikipedia.org/wiki/Sass"><img src="assets/img/technologies/sassLogo.png"
               alt="sass"><br>SASS</a></li>
         <li><a target="new" href="https://es.wikipedia.org/wiki/MySQL"><img src="assets/img/technologies/mysqlLogo.png"
@@ -210,10 +200,9 @@
               src="assets/img/technologies/debianLogo.png" alt="debian"><br>DEBIAN</a></li>
       </ul>
     </nav>
-  </section>
 
-  <!--======SERVICES======-->
-  <!--!OPEN-->
+  </section>
+  <!--!END ACERCA-->
   <div id="servicios" class="mt-5 container-fluid">
     <div class="separadorDeSeccion row pt-5">
       <p class="d-none">Next Section</p>
@@ -222,80 +211,86 @@
   <div class="container-fluid tituloDeSeccion  pt-3 pb-3">
     <h2>servicios</h2>
   </div>
-  <!--!END-->
+
   <section class="container-lg text-center">
 
-    <div class="row mt-5 mx-5">
+    <div class="row mt-5">
       <div class="col-10 offset-1 col-md-4 offset-md-0 col-sm-6 offset-sm-0">
-        <div class="card text-dark bg-primary mb-3" style="max-width: 18rem;">
+        <div class="card text-dark bg-primary mb-3">
           <div class="card-body text-light tarjetaEstilo">
             <div class="text-center">
               <h4><i class="bi bi-phone-fill"></i></h4>
-              <h5 class="card-title">Totalmente Receptivo</h5>
+              <h5 class="card-title">Totalmente Adaptable</h5>
             </div>
-            <p class="card-text textoJustificado">Su sitio se mostrará correctamente en cualquier dispositivo, incluidas computadoras de escritorio, tabletas y teléfonos móviles.</p>
+            <p class="card-text textoJustificado">Su sitio se mostrará correctamente en cualquier dispositivo, incluidas
+              computadoras de escritorio, tabletas y teléfonos móviles.</p>
           </div>
         </div>
       </div>
       <div class="col-10 offset-1 col-md-4 offset-md-0 col-sm-6 offset-sm-0">
-        <div class="card text-dark bg-primary mb-3" style="max-width: 18rem;">
-          <div class="card-body text-light tarjetaEstilo">
-            <div class="text-center">
-              <h4><i class="bi bi-brush-fill"></i></h4>
-              <h5 class="card-title">Diseño Creativo</h5>
-            </div>
-            <p class="card-text textoJustificado">Un buen y atractivo diseño web le ayuda a mantener sus clientes potenciales en su sitio, que es la cara digital de su negocio.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-10 offset-1 col-md-4 offset-md-0 col-sm-6 offset-sm-0">
-        <div class="card text-dark bg-primary mb-3" style="max-width: 18rem;">
+        <div class="card text-dark bg-primary mb-3">
           <div class="card-body text-light tarjetaEstilo">
             <div class="text-center">
               <h4><strong> &lt;/&gt; </strong></h4>
               <h5 class="card-title">Desarrollo</h5>
             </div>
-            <p class="card-text textoJustificado">Conozco la importancia del diseño web y puedo ayudarte a crear un sitio web que te encantará.</p>
+            <p class="card-text textoJustificado">Conozco la importancia del diseño web y puedo ayudarte a crear un
+              sitio web que te encantará.</p>
           </div>
         </div>
       </div>
       <div class="col-10 offset-1 col-md-4 offset-md-0 col-sm-6 offset-sm-0">
-        <div class="card text-dark bg-primary mb-3" style="max-width: 18rem;">
+        <div class="card text-dark bg-primary mb-3">
           <div class="card-body text-light tarjetaEstilo">
             <div class="text-center">
-              <h4><i class="bi bi-hand-thumbs-up-fill"></i></h4>
-              <h5 class="card-title">Integración de redes sociales</h5>
+              <h4><i class="bi bi-brush-fill"></i></h4>
+              <h5 class="card-title">Diseño Creativo</h5>
             </div>
-            <p class="card-text textoJustificado">Existen muchas plataformas sociales y debes promover tu presencia en ellas en tu sitio web.</p>
+            <p class="card-text textoJustificado">Un buen y atractivo diseño web le ayuda a mantener sus clientes
+              potenciales en su sitio, que es la cara digital de su negocio.</p>
           </div>
         </div>
       </div>
       <div class="col-10 offset-1 col-md-4 offset-md-0 col-sm-6 offset-sm-0">
-        <div class="card text-dark bg-primary mb-3" style="max-width: 18rem;">
+        <div class="card text-dark bg-primary mb-3">
           <div class="card-body text-light tarjetaEstilo">
             <div class="text-center">
               <h4><i class="bi bi-speedometer2"></i></h4>
               <h5 class="card-title">Rendimiento</h5>
             </div>
-            <p class="card-text textoJustificado">Retener a los usuarios es fundamental para mejorar las conversiones. Los sitios de alto rendimiento atraen y retienen a los usuarios.</p>
+            <p class="card-text textoJustificado">Retener a los usuarios es fundamental para mejorar las conversiones.
+              Los sitios de alto rendimiento atraen y retienen a los usuarios.</p>
           </div>
         </div>
       </div>
       <div class="col-10 offset-1 col-md-4 offset-md-0 col-sm-6 offset-sm-0">
-        <div class="card text-dark bg-primary mb-3" style="max-width: 18rem;">
+        <div class="card text-dark bg-primary mb-3">
+          <div class="card-body text-light tarjetaEstilo">
+            <div class="text-center">
+              <h4><i class="bi bi-hand-thumbs-up-fill"></i></h4>
+              <h5 class="card-title">Integración de redes sociales</h5>
+            </div>
+            <p class="card-text textoJustificado">Existen muchas plataformas sociales y debes promover tu presencia en
+              ellas en tu sitio web.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-10 offset-1 col-md-4 offset-md-0 col-sm-6 offset-sm-0">
+        <div class="card text-dark bg-primary mb-3">
           <div class="card-body text-light tarjetaEstilo">
             <div class="text-center">
               <h4><i class="bi bi-eye-fill"></i></h4>
               <h5 class="card-title">SEO</h5>
             </div>
-            <p class="card-text textoJustificado">Optimizaré su sitio con una estrategia inteligente de optimización de motores de búsqueda para generar clientes potenciales.</p>
+            <p class="card-text textoJustificado">Optimizaré su sitio con una estrategia inteligente de optimización de
+              motores de búsqueda para generar clientes potenciales.</p>
           </div>
         </div>
       </div>
     </div>
-  
+
   </section>
-  <!--===END SERVICES===-->
+
 
   <!--======PORTFOLIO======-->
   <!--! OPEN-->
@@ -308,35 +303,27 @@
     <h2>portafolio</h2>
   </div>
   <!--! END-->
-  <section id="portafolio">
-    <div>
-      <div><img src="" alt="" /></div>
-      <div>
-        <p>Tuamare</p>
-        <a href=""></a><a href=""></a>
+  <section id="portafolio" class="container-lg">
+    <div class="row mt-5 mx-5">
+
+      <div class="col-10 offset-1 col-md-4 offset-md-0 col-sm-6 offset-sm-0">
+        <div class="card text-dark bg-primary mb-3" style="max-width: 18rem;">
+          <div class="card-body text-light tarjetaEstilo">
+            <div class="text-center">
+              <h4><i class="bi bi-phone-fill"></i></h4>
+              <h5 class="card-title">Totalmente Adaptable</h5>
+            </div>
+            <p class="card-text textoJustificado">Su sitio se mostrará correctamente en cualquier dispositivo, incluidas
+              computadoras de escritorio, tabletas y teléfonos móviles.</p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div>
-      <div><img src="" alt="" /></div>
-      <div>
-        <p>Delicias de mi Tierra</p>
-        <a href=""></a><a href=""></a>
-      </div>
-    </div>
-    <div>
-      <div><img src="" alt="" /></div>
-      <div>
-        <p></p>
-        <a href=""></a><a href=""></a>
-      </div>
+
     </div>
   </section>
 
   <!--===END PORTFOLIO===-->
 
-  <!--======FOOTER======-->
-
-  <!--! OPEN-->
   <div id="contacto" class="mt-5 container-fluid">
     <div class="separadorDeSeccion row pt-5">
       <p class="d-none">Next Section</p>
@@ -345,15 +332,53 @@
   <div class="container-fluid tituloDeSeccion  pt-3 pb-3">
     <h2>contacto</h2>
   </div>
-  <!--! END-->
 
-  <footer>
+  <footer class="text-center">
+
+    <nav class="redesSociales my-5" id="botoneraFooter">
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/duemarfra/" target="new" class="facebook"><i class="bi bi-facebook"></i></a>
+        </li>
+        <li>
+          <a href="https://github.com/duemarfra" target="new" class="github"><i class="bi bi-github"></i></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/marcelo-due%C3%B1as-6a5889221/" target="new" class="linkedin"><i
+              class="bi bi-linkedin"></i></a>
+        </li>
+        <li>
+          <a href="https://t.me/marcelodue" target="new" class="telegram"><i class="bi bi-telegram"></i></a>
+        </li>
+        <li>
+          <a href="mailto:duemarfra@gmail.com" target="new" class="email"><i class="bi bi-envelope-fill"></i></a>
+        </li>
+      </ul>
+    </nav>
+
     <div id="copyright">
-      Developed and designed by Tu Marcelo Dueñas. ©2021. All rights reserved.
+      Desarrollado y diseñado por Marcelo Dueñas. © 2021. Todos los derechos reservados.
     </div>
   </footer>
-  <!--===END FOOTER===-->
+
+  <!-- <div class="row">
+    <div class="col-1 bg-primary">1</div>
+    <div class="col-1 bg-danger">2</div>
+    <div class="col-1 bg-dark">3</div>
+
+    <div class="col-1 bg-primary">4</div>
+    <div class="col-1 bg-danger">5</div>
+    <div class="col-1 bg-dark">6</div>
+
+    <div class="col-1 bg-primary">7</div>
+    <div class="col-1 bg-danger">8</div>
+    <div class="col-1 bg-dark">9</div>
+
+    <div class="col-1 bg-primary">10</div>
+    <div class="col-1 bg-danger">11</div>
+    <div class="col-1 bg-dark">12</div>
+  </div> -->
+
 </body>
-<!--==========***END BODDY***==========-->
 
 </html>
