@@ -11,6 +11,7 @@
     
     --verdefluorecente : #00ffaa;
     --grisBotonera: #646464;
+    --letrasBotonera: #7dbfda;
     --grisClaro: #848484;
     --gris: #545454;
     --azul: #388ad1;
@@ -37,8 +38,16 @@ section, footer {
     height: auto !important;
 }
 
-.colorBotoneraPrincipal {
+#botoneraPrincipal {
     background: var(--grisBotonera);
+}
+
+#botoneraPrincipal a {
+    color: var(--letrasBotonera) !important;
+}
+
+#botoneraPrincipal a:hover {
+    color: var(--verdefluorecente) !important;
 }
 
 #inicio {
@@ -270,8 +279,12 @@ h3 {
 
 /*! end*/
 
-#copyright {
+footer {
     background-color: var(--gris);
+}
+
+#copyright {
+    background-color: var(--negro);
 }
 
 @media all and (max-width: 749px){
