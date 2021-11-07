@@ -9,9 +9,9 @@
     --azulPrimary: #0d6efd;
     --grisSecondary: #6c757d;
     
-    --verdefluorecente : #00ffaa;
+    /* --verdefluorecente : #00ffaa; */
     --grisBotonera: #646464;
-    --letrasBotonera: #7dbfda;
+    --grisCeleste: #7dbfda;
     --grisClaro: #848484;
     --gris: #545454;
     --azul: #388ad1;
@@ -19,11 +19,11 @@
 }
 
 a {
-    color: var(--Cyan) !important;
+    color: var(--grisCeleste) !important;
 }
 
 a:hover {
-    color: var(--verdefluorecente) !important;
+    color: var(--Cyan) !important;
 }
 
 p {
@@ -42,14 +42,6 @@ section, footer {
     background: var(--grisBotonera);
 }
 
-#botoneraPrincipal a {
-    color: var(--letrasBotonera) !important;
-}
-
-#botoneraPrincipal a:hover {
-    color: var(--verdefluorecente) !important;
-}
-
 #inicio {
     height: 93vh !important;
     background: linear-gradient(-45deg, rgba(5,7,12,0.75), rgba(5,7,12,0.75)), url(../../assets/img/fondo.jpg) !important;
@@ -63,7 +55,7 @@ section, footer {
 }
 
 h1{
-    background: linear-gradient(var(--telegram), rgba(5,7,12,0.75));
+    background: linear-gradient(rgba(5,7,12,0.75), var(--grisCeleste));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
@@ -150,6 +142,14 @@ ul{
     background: var(--email);
 }
 
+.separadorDeSeccion {
+    background: linear-gradient( 45deg, var(--grisSecondary) 50%, var(--gris) 50%);
+}
+
+.tituloDeSeccion {
+    background: linear-gradient( 45deg, var(--azul) 50%, var(--grisSecondary) 50%) ;
+}
+
 h2 {
     background: linear-gradient(45deg, var(--grisSecondary) 50%, var(--azul) 50%);
     -webkit-text-fill-color: transparent;
@@ -160,22 +160,28 @@ h2 {
     text-transform: uppercase;
 }
 
-h3 {
-    color: var(--Cyan);
+.estiloCaja {
+    background: var(--grisBotonera) !important;
+    border: 2px solid var(--grisCeleste)!important;
 }
 
-.rellenoCaja {
-    background: var(--grisBotonera) !important;
+h3 {
+    color: var(--grisCeleste);
 }
+
 #btnDescarga {
     background: var(--azul);
 }
 #btnDescarga:hover {
-    background-color: var(--verdefluorecente) !important;
+    background-color: var(--Cyan) !important;
+}
+
+#btnLee {
+    background: var(--grisCeleste);
 }
 
 #btnLee:hover {
-    background: var(--verdefluorecente) !important;
+    background: var(--Cyan) !important;
 }
 
 .tecnologias ul li {
@@ -192,7 +198,7 @@ h3 {
     display: block;
     margin: 10px 0px;
     padding: 0 10px;
-    color: #ffffff !important;
+    color: var(--grisCeleste) !important;
     line-height: 50px;
     font-size: 18px;
     box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
@@ -206,26 +212,18 @@ h3 {
 }
 
 .tecnologias ul li a:hover{
-    color: var(--verdefluorecente) !important;
+    color: var(--Cyan) !important;
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
     filter: none;
-}
-
-.separadorDeSeccion {
-    background: linear-gradient( 45deg, var(--grisSecondary) 50%, var(--gris) 50%);
-}
-
-.tituloDeSeccion {
-    background: linear-gradient( 45deg, var(--azul) 50%, var(--grisSecondary) 50%) ;
 }
 
 .tarjetaEstilo {
     overflow: hidden;
     transition: all ease-out 0.2s;
     background: linear-gradient(var(--grisSecondary), var(--grisBotonera));
-    border: 3px solid var(--Cyan);
-    box-shadow: 2px 1px 5px 1px var(--Cyan);
+    border: 3px solid var(--grisCeleste);
+    box-shadow: 2px 1px 5px 1px var(--grisCeleste);
     position: sticky;
     border-radius: 1%;
     -webkit-border-radius: 1%;
@@ -235,11 +233,11 @@ h3 {
 }
 
 .tarjetaEstilo h5 {
-    color: var(--Cyan);
+    color: var(--grisCeleste);
 }
 
 .tarjetaEstilo p {
-    border-bottom: 5px solid var(--Cyan);
+    border-bottom: 5px solid var(--grisCeleste);
     border-radius: 2%;
     -webkit-border-radius: 2%;
     -moz-border-radius: 2%;
@@ -253,15 +251,16 @@ h3 {
     -moz-transform: scale(1.10);
     -ms-transform: scale(1.10);
     -o-transform: scale(1.10);
-    box-shadow: 2px 1px 5px 1px var(--verdefluorecente);
+    border: 3px solid var(--Cyan);
+    box-shadow: 2px 1px 5px 1px var(--Cyan);
 }
 
 .tarjetaEstilo:hover h4 {
-    color: var(--verdefluorecente);
+    color: var(--Cyan);
 }
 
 .tarjetaEstilo:hover p {
-    border-bottom: 5px solid var(--verdefluorecente);
+    border-bottom: 5px solid var(--Cyan);
     overflow: hidden;
 }
 
