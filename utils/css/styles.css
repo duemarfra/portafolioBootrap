@@ -169,6 +169,11 @@ h3 {
     color: var(--grisCeleste);
 }
 
+.destacadoGrisCeleste {
+    color: var(--grisCeleste);
+    font-size: 20px;
+}
+
 #btnDescarga {
     background: var(--azul);
 }
