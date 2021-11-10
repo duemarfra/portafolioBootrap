@@ -8,6 +8,7 @@
     --Cyan: #0dcaf0;
     --azulPrimary: #0d6efd;
     --grisSecondary: #6c757d;
+    --blanco: #ffffff;
     
     --grisBotonera: #646464;
     --grisCeleste: #7dbfda;
@@ -236,7 +237,7 @@ h3 {
     -o-border-radius: 1%;
 }
 
-.tarjetaEstilo h5 {
+h5 {
     color: var(--grisCeleste);
 }
 
@@ -267,6 +268,82 @@ h3 {
     border-bottom: 5px solid var(--Cyan);
     overflow: hidden;
 }
+
+figure {
+    height: 100% !important;
+}
+
+.targetaPortafolio figure {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0px 15px 25px rgba(5,7,12,0.75);
+    transition: all 500ms ease-out;
+}
+
+.targetaPortafolio figure img {
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+    -webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -ms-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+}
+
+.targetaPortafolio figure .capaPortafolio{
+    padding: 10px;
+    padding-top: 20%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(5,7,12,0.75);
+    text-align: center;
+    transition: all 500ms ease-out;
+    -webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -ms-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.targetaPortafolio figure:hover .capaPortafolio {
+    opacity: 1;
+    visibility: visible;
+}
+
+.targetaPortafolio figure:hover {
+    z-index: 1;
+
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+
+    transition: all 500ms ease-out;
+    -webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -ms-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+}
+
+.targetaPortafolio a {
+    font-size: 25px;
+    color: var(--blanco) !important;
+    transition: all 500ms ease-out;
+    -webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -ms-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+}
+
+.targetaPortafolio a:hover {
+    text-shadow: -5px -5px 5px var(--Cyan);
+}
+
 
 /*! open*/
 
