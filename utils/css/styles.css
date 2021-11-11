@@ -15,7 +15,7 @@
     --grisClaro: #848484;
     --gris: #545454;
     --azul: #388ad1;
-    --negro: #05070c; /*! rgb(5,7,12) */
+    --negro: #05070c;
     --negroClaro: #333333;
 }
 
@@ -348,9 +348,6 @@ figure {
     text-shadow: -5px -5px 5px var(--Cyan);
 }
 
-
-/*! open*/
-
 #botoneraFooter ul li {
     width: 150px;
     height: 150px;
@@ -360,8 +357,6 @@ figure {
     line-height: 150px;
     font-size: 50px;
 }
-
-/*! end*/
 
 footer {
     background-color: var(--negroClaro);
