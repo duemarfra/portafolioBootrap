@@ -1,3 +1,3 @@
-# Mi PORTAFOLIO WEB BOOTSTRAP
+# Mi PORTAFOLIO WEB
 
-Este es mi primer portafolio web, realizado con html, css y Bootstrap.
+Este es mi portafolio web, realizado con html, css, javascript y la libreria Bootstrap.
