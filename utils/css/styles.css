@@ -49,7 +49,7 @@ section, footer {
 
 #inicio {
     height: 93vh !important;
-    background: linear-gradient(-45deg, rgba(5,7,12,0.75), rgba(5,7,12,0.75)), url(../../assets/img/fondo.jpg) !important;
+    background: linear-gradient(-45deg, rgba(5,7,12,0.75), rgba(5,7,12,0.75)), url(../../assets/img/background.jpg) !important;
     background-size: cover !important;
     background-position: center !important;
     background-attachment: fixed !important;
